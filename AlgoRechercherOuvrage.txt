@@ -1,0 +1,107 @@
+Algo Ouvrage
+
+# Fonction RechercherOuvrage
+
+Pour rechercher un ouvrage, l’utilisateur doit : 
+
+									- saisir plusieurs champs afin d'identifier l'ouvrage à rechercher.
+
+								    - valider sa saisie.
+
+								    -Recommencez ou quittez
+
+
+Definir une fonction rechercher un ouvrage()
+	
+		Le systeme affiche "Menu Rechercher un ouvrage"
+
+		Le systeme affiche:
+
+		1 --> Rechercher par Titre
+		2 --> Rechercher par Auteur
+	 	3 --> Rechercher par Editeur
+		4 --> Rechercher par Isbn
+
+		Le choix de l'utilisateur est stocké dans la var.choix
+
+		Si (lvar.choix --> 1)
+		alors:
+
+			 L'utilisateur doit saisir le titre de l'ouvrage a rechercher
+			 La saisie de l'utilisateur est stocké ( saisie --> var.RTitre)
+
+			 Pour chaque ligne du fichier (bibliotheque.txt) alors: 
+
+			 	si ( Une ligne du fichier corresponds à la var.RTitre)
+			 	alors:
+
+			 		 afficher "ouvrage trouvé"
+			 		 afficher l'élément du fichier correspondant a var.Rtitre
+
+			 	findesi
+			findepour
+
+		Sinonsi (lvar.choix --> 2)
+		alors:
+
+			 L'utilisateur doit saisir le titre de l'ouvrage a rechercher
+			 La saisie de l'utilisateur est stocké ( saisie --> var.RAuteur)
+
+			 Pour chaque ligne du fichier (bibliotheque.txt) alors: 
+
+			 	si ( Une ligne du fichier corresponds à la var.RAuteur)
+			 	alors:
+
+			 		 afficher "ouvrage trouvé"
+			 		 afficher l'élément du fichier correspondant a var.RAuteur
+
+			 	findesi
+			findepour
+
+		Sinonsi (lvar.choix --> 3)
+		alors:
+
+			 L'utilisateur doit saisir le titre de l'ouvrage a rechercher
+			 La saisie de l'utilisateur est stocké ( saisie --> var.REditeur)
+
+			 Pour chaque ligne du fichier (bibliotheque.txt) alors: 
+
+			 	si ( Une ligne du fichier corresponds à la var.REditeur)
+			 	alors:
+
+			 		 afficher "ouvrage trouvé"
+			 		 afficher l'élément du fichier correspondant a var.REditeur
+
+			 	findesi
+			findepour
+
+		Sinonsi (lvar.choix --> 4)
+		alors:
+
+			 L'utilisateur doit saisir le titre de l'ouvrage a rechercher
+			 La saisie de l'utilisateur est stocké ( saisie --> var.RIsbn)
+
+			 Pour chaque ligne du fichier (bibliotheque.txt) alors: 
+
+			 	si ( Une ligne du fichier corresponds à la var.RIsbn)
+			 	alors:
+
+			 		 afficher "ouvrage trouvé"
+			 		 afficher l'élément du fichier correspondant a var.RIsbn
+
+			 	findesi
+			findepour
+
+		Sinon 
+			 afficher ('choix introuvable')
+			 afficher "Recommencez ? oui/non"
+	
+				si l'utilisateur valide 
+				alors:
+
+					  appel fonction RechercherOuvrage
+				sinon 
+					  quittez le programme
+
+
+

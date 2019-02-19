@@ -1,0 +1,66 @@
+Algo Fontion ajouter un ouvrage 
+
+Afficher "Menu pour ajouter un ouvrage"
+Afficher " information néccéssaire a l'ajout d'un ouvrage"
+
+fonctionajouterOuvrage()
+
+	#Vérifier que le fichier contenant les ouvrage est présent
+	
+	si le fichier bibliotheque.txt n'est pas présent alors:
+
+		afficher "Création du fichier bibliothque.txt"
+		création du fichier bibliotheque.txt
+
+	sinon 	"afficher "Chargement de la bibliotheque : ok"
+
+	afficher "Entrez les infos necessaire"
+
+	titre vaut le titre saisie par l'utilisateur
+	auteur vaut le titre saisie par l'utilisateur 
+	editeur vaut le titre saisie par l'utilisateur 
+	isbn vaut l'isbn saisie par l'utilisateur 
+
+fin de fonctionajouterOuvrage()
+	
+#Une fois la saisie effectuée, demander une validation.
+
+afficher "Vous venez d'ajouter un ouvrage. Validez votre saisie ? oui/non"
+	
+si l'utilisateur valide alors: 
+
+	afficher "Vous venez d'ajouter un ouvrage ave succès"
+	
+
+	inscrire le contenue de la var_titre sur le fichier bibliotheque.txt
+	inscrire le contenue de la var_auteur sur le fihier bibliotheque.txt
+	inscrire le contenue de la var_editeur sur le fichier bibliotheque.txt
+	inscrire le contenue de la var_isbn sur le fichier bibliotheque.txt
+	sauter une ligne pour la prochaine saisie 
+	Faire appel a la fonction ("MENU")
+
+sinon 
+
+	afficher "Veuillez reesayer à nouveau"
+	faire appel a la fonction ajouterOuvrage()
+	
+	#Une fois la saisie effectué, demander une validation.
+	afficher "Vous venez d'ajouter un ouvrage. Validez votre saisie ? oui/non"
+	
+si l'utilisateur valide alors: 
+
+	afficher "Vous venez d'ajouter un ouvrage ave succès"
+	
+
+	inscrire le contenue de la var_titre sur le fichier bibliotheque.txt
+	inscrire le contenue de la var_auteur sur le fichier bibliotheque.txt
+	inscrire le contenue de la var_editeur sur le fichier bibliotheque.txt
+	inscrire le contenue de la var_isbn sur le fichier bibliotheque.txt
+	sauter une ligne pour la prochaine saisie 
+	faire appel a la fonction ("MENU")
+	exit
+
+sinon 
+
+	afficher "Vous venez d'essayer le nombre de fois max. Relancez le programme.
+	faire appel a fonction ("MENU")

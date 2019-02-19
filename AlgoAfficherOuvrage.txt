@@ -1,0 +1,45 @@
+Algo Ouvrage 
+
+# Fonction afficher un ouvrage 
+
+L’affichage d’un ouvrage se fait par le remplissage de plusieurs champs , par l’utilisateur.
+Stockées dans des variables temporaire.
+
+Définir la Fonctionafficherunouvrage()
+
+	Afficher « Gestionnaire, Afficher un ouvrage »
+
+	Saisie du « Titre de l’ouvrage afficher » par l’utilisateur de l’app
+	Stockez dans une variable temporaire le titre saisie.
+
+	Saisie de « l’Auteur de l’ouvrage a afficher» par l’utilisateur de l’app
+	Stockez dans une variable temporaire l’auteur saisie.
+
+	Saisie de « l’éditeur de l’ouvrage a afficher» par l’utilisateur de l’app.
+	Stockez dans un variable temporaire l’éditeur saisie.
+
+	Saisie de « l’isbn de l’ouvrage a afficher» par l’utilisateur de l’app
+	Stockez dans une variable temporaire l’isba saisie.
+	
+	L’utilisateur doit valider sa saisie pour afficher l’ouvrage.
+	
+	(Pour que la saisie soit valider : - tous les champs soit remplie par l’utilisateur			  )
+	(						  - Seul le champ Isbn peut contenir uniquement des chiffres)
+							  
+
+	Si (l’utilisateur répond aux conditions pour afficher un ouvrage)
+	alors:
+		
+		Si (le fichier des ouvrages est présent) bibliothèque.txt
+		alors:
+
+			Afficher « chargement du fichier »
+			Parcourir le fichier des ouvrages
+			Si ( le titre saisie par l’utilisateur correspond a un titre présent sur le fichier bibliothèque.txt)
+			alors:
+
+				Afficher « Titre
+
+		Sinon
+	
+			Afficher « Erreur, fichier ouvrage manquant ! »

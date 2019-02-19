@@ -1,0 +1,66 @@
+Algo Ouvrage
+
+# Fonction Supprimerunouvrage()
+La suppression d’un ouvrage se fait avec un des différents champs (Titre, auteur, éditeur, isbn)
+
+	Afficher « Menu supprimer un ouvrage »
+
+L’utilisateur doit saisir le champs par lequel la suppression aura lieu 
+
+	Afficher « Faire votre choix »
+
+	choix 1: Supprimer par Titre 
+	choix 2: Supprimer par Auteur
+	choix 3: Supprimer par Editeur
+	choix 4: supprimer par ISBN 
+	choix 0: retour ou quittez le programme
+
+	Si (choix vaut 1) et 
+	Si (Dans le fichier bibliothèque.txt, il y a un ou plusieurs titre similaire au contenue de la var.titre)
+	alors:
+
+	
+	alors:
+	
+		L’utilisateur saisi un titre
+		Le titre saisi est stocké dans var.titre
+			
+			Afficher la ligne ou toutes les lignes du fichier similaire au contenue de la var.titre
+			
+			L’utilisateur doit faire un choix pour sélectionner l’ouvrage a supprimer
+
+			schoix1 vaut le premier ouvrage du fichier. (titre similaire)
+			schoix2: le deuxième ouvrage du fichier.
+			schoix3: le troisième ouvrage du fichier.
+			ect …
+		
+		SinonSI Si (choix vaut 2)  et 
+		(Dans le fichier bibliothèque.txt, il y a une ou plusieurs lignes similaire au contenue de la var.auteur)
+		alors:
+
+		L’utilisateur saisi un auteur
+		Le titre saisi est stocké dans var.auteur
+
+			Afficher la ligne ou toutes les lignes du fichier similaire au contenue de la var.auteur
+			
+			L’utilisateur doit faire un choix pour sélectionner l’ouvrage a supprimer
+
+			schoix1 vaut le premier ouvrage du fichier. (Auteur similaire)
+			schoix2: le deuxième ouvrage du fichier.
+			schoix3: le troisième ouvrage du fichier.
+			ect …
+		
+		SinonSi (choix vaut 3) et 
+		(Dans le fichier bibliothèque.txt, il y a une ou plusieurs lignes similaire au contenue de la var.editeur)
+		alors:
+	
+			Afficher la ligne ou toutes les lignes du fichier similaire au contenue de la var.titre
+			
+			L’utilisateur doit faire un choix pour sélectionner l’ouvrage a supprimer
+
+			schoix1 vaut le premier ouvrage du fichier. (titre similaire)
+			schoix2: le deuxième ouvrage du fichier.
+			schoix3: le troisième ouvrage du fichier.
+			ect …
+
+		SinonSi (dans le fichier

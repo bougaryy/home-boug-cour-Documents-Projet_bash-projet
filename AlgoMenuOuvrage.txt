@@ -1,0 +1,51 @@
+Algo Menu ouvrage (menu d'ouverture de l'application)
+
+Pour afficher le menu ouvrage et utilisier les fonctionnalité de ce programme. 
+
+
+Afficher "Menu ouvrage" 
+Plusieurs $choix sont disponible quant à l'utilisation du programme.
+# l'utilisateur fait son choix entre les dif proposition (0 > 4)
+
+(choix) 0: quitter le programme
+(choix) 1: ajouter un ouvrage
+(choix) 2: supprimer un ouvrage 
+(choix) 3: afficher un ouvrage 
+(choix) 4: rechercher un ouvrage 
+
+tant que choix n'est pas compris entre 0 et 4 alors:
+	
+	afficher "Choix impossible, veuillez recommencez"
+
+si choix est égale à 0 alors:
+  |
+  |	afficher "Vous avez choisis de quitter le programme"
+  |	quitter le programme 
+  |
+findesi 
+
+si choix est égale à 1 alors:
+  |
+  |	afficher "Vous allez ajouter un ouvrage"
+  |	afficher "Chargement des modules"
+  |	choix == FonctionAjouterouvrage()
+  |
+sinon si choix est égale à 2 alors:
+  |
+  |	afficher "Vous allez supprimer un ouvrage"
+  |	afficher "Chargement des modules"
+  |	choix == FonctionSupprimerouvrage()
+  |
+sinon si choix est égale à 3 alors:
+  |
+  |	afficher "Vous allez afficher un ouvrage"
+  |	afficher "Chargement des modules"
+  |	choix == FonctionAfficherouvrage()
+  |
+sinon si choix est égale à 4 alors:
+  |
+  |	afficher "Vous allez rechercher un ouvrage"
+  |	afficher "Chargement des modules"
+  |	choix == FonctionRechercherrouvrage()
+  |
+fin de si
